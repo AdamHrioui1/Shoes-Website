@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;box-sizing: border-box;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        body {
+            margin: auto;
+            width: 100%;
+            max-width: 1300px;
+            min-height: 100vh;
+            height: 100%;
+
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            overflow-x: hidden;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .nav {
+            max-width: 1300px;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #4cac4c;
+        }
+
+        .contact {
+            color: #fff;
+            font-family: arial;
+            font-size: 14px;
+            margin-left: 30px;
+        }
+        .contact p {
+            display: inline;
+        }
+        .contact i {
+            color: #fff;
+            padding: 0 5px;
+        }
+
+        .lan_media {
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .lan_media i {
+            padding: 0 5px;
+            color: #fff;
+            font-size: 17px;
+        }
+        .lan_media select{
+            padding: 7px;
+            margin: 0 10px;
+            outline: none;
+            border: none;
+        }
+
+        i {
+            color: black;
+        }
+
+        .flags {
+            margin-right: 25px;
+        }
+
+        /*----------navbar----------*/
+        .navbar {
+            max-width: 1300px;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            border-bottom: 1px solid rgb(238 238 238);
+        }
+        .logo_container, .logo_container2 {
+            padding: 10px 20px;
+        }
+        .logo_container a h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        .total {
+            padding: 0 25px; 
+            font-weight: 600;
+            color: #333;
+        }
+        .total i {
+            font-weight: bold;
+        }
+
+        .second_navbar {
+            display: none;
+        }
+
+        .phone_navbar {
+            display: none;
+        }
+        .sidebar {
+            display: none;
+        }
+        /*-------------------------------------*/
+
+        /*-------------slider-----------------*/
+        .img {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            width: 90%;
+            max-width: 1200px;
+            height: 490px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: anime 20s ease-in-out infinite;
+        }
+
+        .img p {
+            font-family: Arial, Helvetica, sans-serif !important;
+            color: #fff;
+            font-weight: 100;
+            font-size: 20px;
+            text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.7);
+            margin: 20px;
+            margin-top: 40px;
+        }
+        .img h1 {
+            font-family: "Athena Unicode", Times, serif !important;
+            color: #fff;
+            font-size: 50px;
+            text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.7);
+            margin-left: 20px;
+        }
+
+        .img_btn {
+            padding: 20px;
+            color:#fff;
+
+            font-size: 18px;
+            font-weight: 100;
+            border:none;
+            outline: none;
+            background: rgb(76, 172, 76, 0.7);
+            margin: 20px;
+            cursor: pointer;
+        }
+        .img_btn:hover {
+            background: #4cac4c;
+        }
+        .img_btn i {
+            padding: 0 10px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        @keyframes anime {
+            0% {
+                background-image: url("img/slider1.jpg");
+            }
+            25%{
+                background-image: url("img/slider2.jpg");
+            }
+            50% {
+                background-image: url("img/slider1.jpg");
+            }
+            75%{
+                background-image: url("img/slider2.jpg");
+            }
+            100% {
+                background-image: url("img/slider1.jpg");
+            }
+        }
+
+        /*--------x------------------x--------------*/
+
+        /*------------------products---------------*/
+        .container {
+            width: 100%;
+            margin-top: 50px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+        .container h3 {
+            display: block;
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            margin-top: 60px;
+            font-weight: 100;
+            color: #555;
+        }
+        .container h1 {
+            position: relative;
+            display: block;
+            text-align: center;
+            width: 100%;
+            display: block;
+            font-family: "Athena Unicode", Times, serif !important;
+            font-size: 40px;
+            font-weight:600;
+            color: #333;
+            margin-bottom: 50px;
+        }
+        .container h1::after{
+            position: absolute;
+            content: '';
+            bottom: -15px;
+            left: 50%;
+            width: 100px;
+            height: 5px;
+            transform: translate(-50%, -50%);
+            background: #333;
+            border-radius: 5px;
+        }
+        .front_home_page {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .front_home_page .front_page_column {
+            width: 40%;
+            margin: 20px;
+        }
+        .front_home_page .front_page_column:nth-child(2) {
+            padding: 30px;
+        }
+        .front_home_page .front_page_column img{
+            width: 100%;
+        }
+        .front_home_page .front_page_column h1{
+            position: relative;
+            display: block;
+            font-size: 50px;
+            margin-bottom: 20px;
+            font-family: "Athena Unicode", Times, serif !important;
+        }
+        .front_home_page .front_page_column span{
+            display: block;
+            font-family: arial ;
+        }
+        .front_home_page .front_page_column button{
+            display: block;
+            margin-top: 30px;
+        }
+
+        .produt_container {
+            margin: 15px;
+            padding: 10px;
+            width: 250px;
+            border: 1px solid #f0f0f0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            cursor: pointer;
+            transition: .4s;
+        }
+        .produt_container:hover {
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        }
+        .product_img_container {
+            width: 100%;
+        }
+        .product_img_container img {
+            width: 100%;
+        }
+        .produt_container h4 {
+            padding: 10px;
+            text-align: center;
+            color: #333;
+        }
+        .produt_container span {
+            padding: 0 10px 10px;
+            text-align: center;
+            color: #333;
+        }
+        .btn {
+            padding: 10px 30px;
+            margin-bottom: 10px;
+            border: 3px solid #000;
+            background: #000;
+            color: #fff;
+            font-weight: 100;
+            transition: .4s;
+        }
+        .btn:hover {
+            padding: 10px 30px;
+            background: #fff;
+            color: #000;
+            cursor: pointer;
+        }
+        /*-----------------services---------------*/
+        .container.servises {
+            margin: 0 auto;
+            padding: 50px 0;
+            background: #fcfcfc;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .column {
+            margin: 0 30px;
+            width: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            text-align: center;
+        }
+        .circle {
+            padding: 30px;
+            width: 100px;
+            height: 100px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+            background: #4cac4c;
+        }
+        .column i {
+            color: #fcfcfc;
+            font-size: 40px;
+        }
+        .column h3 {
+            margin: 20px auto;
+            font-weight: 600;
+        }
+        .column p {
+            line-height: 25px;
+            margin: 0px auto 20px;
+        }
+        .hight_quality {
+            max-width: 800px;
+            width: 100%;
+        }
+        .hight_quality img {
+            width: 100%;
+        }
+        .container.video {
+            margin: 0;
+        }
+        iframe {
+            padding: 10px;
+        }
+        .paragraph_container {
+            max-width: 800px;
+            padding: 30px;
+            text-align: center;
+            line-height: 25px;
+            color: #444;
+        }
+        /*--------x-----------x--------------*/
+        /*----------------footer----------------*/
+        footer {
+            margin-top: 50px;
+            width: 100%;
+            color: #fff;
+            background: #000;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+        .social_media {
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+            padding: 30px 0;
+            border-bottom: 1px solid #cecece;
+        }
+        .social_media i{
+            color: #fff;
+            padding: 0 20px;
+            cursor: pointer;
+        }
+        .footer_logos .footer_logo_img {
+            margin: 20px;
+        }
+        .generale_info {
+            width: 100%;
+            padding: 10px;
+
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .generale_info ul {
+            margin: 10px;
+            width: 250px;
+            text-align: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .generale_info ul h3{
+            color: #fff;
+            padding: 10px;
+            margin: 10px;
+            border-bottom: 1px dotted #aaa;
+        }
+        .generale_info ul li{
+            color: rgb(102 102 102);
+            line-height: 25px;
+            font-size: 14px;
+        }
+        .generale_info ul li i{
+            padding: 5px;
+            color: rgb(102 102 102);
+            line-height: 25px;
+            font-size: 14px;
+        }
+        .secure_payments {
+            margin-top: 20px;
+            width: 200px;
+        }
+        .secure_payments img {
+            width: 100%;
+        }
+
+        .copyright {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border-top: 1px dotted #aaa;
+            color: #666;
+        }
+        /*--------------product page -----------------*/
+        .product_wrapper {
+            max-width: 1200px;
+            width: 100%;
+
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .column1 {
+            padding: 20px;
+            width: 400px;
+            display: inline;
+            border-right: 1px solid #eee;
+        }
+        .customers_favorites {
+            width: 100%;
+        }
+        .customers_favorites h3{
+            margin: 0px;
+            text-align: left;
+            padding: 10px;
+            padding-left: 0;
+            color: #000;
+            font-weight: 600;
+            border-bottom: 2px solid #000;
+        }
+        .customers_favorites h4:hover{
+            color: #4cac4c;
+        }
+        .customers_favorites ul {
+            width: 100%;
+            padding: 10px;
+        }
+        .customers_favorites ul li{
+            width: 100%;
+            margin: 10px 0;
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .customers_favorites ul li:hover{
+            color: #4cac4c;
+            cursor: pointer;
+        }
+        .txt_part {
+            width: 70%;
+            line-height: 30px;
+        }
+        .column2_wrapper {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .column2 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .column2 .product_column {
+            width: 45%;
+            padding: 20px;
+            margin: 20px;
+        }
+        .column2 .product_column p{
+            margin-top: 20px;
+        }
+        .column2 .product_column img{
+            width: 100%;
+        }
+        .column2 .product_column h2{
+            padding: 20px 0;
+        }
+        .column2 .product_column .stars {
+            border-bottom: 2px solid #000;
+        }
+        .column2 .product_column .stars i{
+            padding: 10px 0 20px;
+        }
+        .column2 .product_column p {
+            line-height: 30px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .input_add_to_basket {
+            margin: 20px 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+        }
+        .input_add_to_basket input {
+            margin-right: 20px;
+            padding: 10px;
+            width: 60px;
+            border: 2px solid #000;
+            border-radius: 4px;
+        }
+        .input_add_to_basket button {
+            margin-bottom: 0px;
+        }
+        .column3{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .column3 .produt_container {
+            width: 200px;
+        }
+        .column3 h3 {
+            display: block;
+            padding: 10px;
+            margin: 20px;
+            width: 100%;
+            color: #fff;
+            font-weight: 100;
+            background: #000;
+        }
+        .column4 {
+            display: none;
+        }
+        /*-----------cart--------------*/
+        .shopping_cart {
+            width: 100%;
+            padding: 20px 40px;
+        }
+        .container .shopping_cart_header {
+            padding: 10px;
+            text-align: left;
+            font-weight: 400;
+
+            width: 100%;
+            background: #000;
+            color: #fff;
+        }
+        .table2 {
+            display: none;
+        }
+        table {
+            margin: 20px auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 2px solid #ddd;
+            padding: 10px;
+        }
+        table input {
+            margin-right: 20px;
+            padding: 10px;
+            width: 60px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        table span {
+            font-weight: 700;
+        }
+        table i {
+            font-size: 25px;
+        }
+        table i:hover {
+            color: #ff0000;
+            cursor: pointer;
+        }
+        .basket_totals {
+            margin-left: auto;
+            margin-right: 10px;
+            padding: 20px;
+        }
+        .basket_totals h3 {
+            color: black;
+            font-weight: 700;
+            text-align: left;
+        }
+        @media only screen and (max-width: 1080px) {
+            .column1 {
+                display: none;
+            }
+            .column4 {
+                display: block;
+                padding: 20px;
+                width: 100%;
+                display: inline;
+                border: 1px solid #eee;
+            }
+            
+        }
+
+
+        /*--------x-----------x--------------*/
+        @media screen and (max-width : 850px){
+            .front_home_page .front_page_column {
+                width: 100%;
+                padding: 20px;
+            }
+            .front_home_page .front_page_column h1{
+                width: 100%;
+                font-size: 40px;
+            }
+            .front_home_page .front_page_column button{
+                width: 100%;
+                margin: auto;
+                margin-top: 20px;
+            }
+            
+        }
+        @media screen and (max-width : 800px){
+            .media {
+                display: none;
+            }
+            .img {
+                display: none;
+            }
+        }
+        @media screen and (max-width : 700px){
+            .nav {
+                display: none;
+            }
+            .logo_container {
+                display: none;
+            }
+            .logo_container2 .logo2{
+                padding: 0 10px;
+            }
+            .total {
+                display: none;
+            }
+            .phone_navbar {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid #ddd;
+            }
+            .phone_navbar i {
+                font-size:30px;
+                font-weight: bold;
+                padding: 10px 20px;
+            }
+            .fa.fa-bars {
+                padding : 20px;
+                border-right: 1px solid #ddd;
+                cursor: pointer;
+                color: #000;
+            }
+            .logo2 {
+                padding:0 20px;
+            }
+            .fal.fa-shopping-cart {
+                padding : 20px;
+                border-left: 1px solid #ddd;
+                cursor: pointer;
+            }
+            
+            .sidebar {
+                margin-top: 8vh;
+                display: block;
+                position: fixed;
+                top: 0;
+                left: -100%;
+
+                width: 100%;
+                height: 95vh;
+                background: #000;
+                text-align: center;
+                transition: .4s;
+                z-index: 10005;
+            }
+            .sidebar a {
+                text-decoration: none;
+                width: 100%;
+                color: #fff;
+            }
+            .sidebar ul {
+                height: 100%;
+                width: 100%;
+                padding: 30px 20px;
+
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-around;
+                flex-direction: column;
+
+            } 
+            .sidebar ul li {
+                color: #fff;
+                width: 100%;
+                padding: 10px 0px;
+                transition: .4s;
+            }
+            .table1 {
+                display: none;
+            }
+            .table2 {
+                display: block;
+                width: 100%;
+            }
+            .table2 tr {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 780px){
+            .column2 .product_column {
+                width: 100%;
+            }
+            .column2 .product_column p{
+                margin-top: 20px;
+            }
+        }
+
+
+        @media only screen and (max-width: 550px){
+            .produt_container {
+                width: 90%;
+            }
+            .column3 .produt_container {
+                margin: 15px;
+                padding: 10px;
+                width: 90%;
+                border: 1px solid #f0f0f0;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .footer_logos {
+                display: none;
+            }
+        }
+
+        /*---x-------------x-------*/  
+
+    </style>
+    <title>.MySHOES Website - Home</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo_container">
+            <a href=""><h1>.MySHOES</h1></a>
+        </div>
+        <a href="cart.html"><h2 class="total" ><i class="fal fa-shopping-cart"></i></h2></a>
+    </div>
+
+    <!----------phone navbar------------->
+    <div class="phone_navbar">
+        <i class="fa fa-bars" id="burger" ></i>
+        
+        <div class="logo_container2">
+            <a href="index.html"><h1>MySHOES</h1></a>
+        </div>
+
+        <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <a href="index.html"><li>HOME</li></a>
+            <a href=""><li>ABOUT US</li></a>
+            <a href=""><li>BLOG</li></a>
+            <a href=""><li>CONTACT</li></a>
+        </ul>
+    </div>
+
+    <div class="front_home_page">
+        <div class="front_page_column">
+            <img src="img/front_home_img.jpeg" alt="">
+        </div>
+        <div class="front_page_column">
+            <h1>BEST SHOES FOR BEST MEN</h1>
+            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores reiciendis rem odit labore harum quasi quis a.</span>
+            <button class="btn" >ADD TO BUSKET</button>
+        </div>
+    </div>
+
+    <!-------------products------------>
+    
+    <div class="container">
+        <h1>Latest Products</h1>
+
+        <!--------- products I ---------->
+        <a href="product1.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes1.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <a href="product1.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes1.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <a href="product1.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes1.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <a href="product1.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes1.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        
+        <!--------- products II ---------->
+        <a href="product2.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes2.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <a href="product2.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes2.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <a href="product2.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes2.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <a href="product2.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes2.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <!--------- products III ---------->
+
+        <a href="product3.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes3.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <a href="product3.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes3.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <a href="product3.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes3.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <a href="product3.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes3.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <!--------- products VI ---------->
+
+        <a href="product4.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes4.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <a href="product4.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes4.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <a href="product4.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes4.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <a href="product4.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes4.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <!--------- products V ---------->
+        <a href="product5.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes5.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <a href="product5.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes5.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <a href="product5.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes5.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <a href="product5.html">
+            <div class="produt_container">
+                <div class="product_img_container">
+                    <img src="img/shoes5.jpg" alt="">
+                </div>
+                <h4>CLASSY BLACK SHOES FOR MEN</h4>
+                <span>300.00Dhs</span>
+                <button class="btn" >ADD TO BUSKET</button>
+            </div>
+        </a>
+        <!---------x-----------x-----------x---------->
+    </div>
+
+    <!------------footer------------>
+    <footer>
+        <div class="social_media">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-google-plus"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <div class="generale_info">
+            <ul>
+                <h3>CONTACT</h3>
+                <li><i class="fab fa-whatsapp"></i> +212 612 345 678 </li>
+                <li><i class="fas fa-phone-square-alt"></i> +212 612 345 678 </li>
+                <li><i class="fas fa-envelope-square"></i> contact@gmail.com </li>
+                <li><i class="fas fa-home"></i>Fraction ait Yassin, commune Idda Ouguerd, 44000 Essaouira, Morocco</li>
+                <div class="flags">
+                    <a href=""><img src="img/uk_flag.png" alt="" width="20px"></a>
+                    <a href=""><img src="img/frensh_flag.png" alt="" width="20px"></a>
+                </div>
+                <small>Translation powered by Google</small>
+            </ul>
+            <ul>
+                <h3>INFORMATION</h3>
+                <li>Domaine Villa Maroc</li>
+                <li>Organic Argan Oil</li>
+                <li>Premium Quality Olive Oil</li>
+                <li>Natural Skincare</li>
+                <li>Contact</li>
+            </ul>
+            <ul>
+                <h3>INTERNATIONAL</h3>
+                <li>Distribuitors</li>
+                <li>Events & Exhibitions</li>
+                <li>Copyright</li>
+            </ul>
+            <ul>
+                <h3>SUPPORT</h3>
+                <li>Store</li>
+                <li>Checkout</li>
+                <li>Privacy Policy</li>
+                <li>Terms and Conditions</li>
+                <div class="secure_payments">
+                    <img src="img/secure_payments.png" alt="">
+                </div>
+            </ul>
+        </div>
+        <small class="copyright" >Copyright &#169 2021 Adam Hrioui</small>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
