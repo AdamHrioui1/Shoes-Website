@@ -89,7 +89,7 @@ i {
 .logo_container, .logo_container2 {
     padding: 10px 20px;
 }
-.logo_container a h1 {
+.logo_container a h1, .logo_container2 a h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
@@ -754,6 +754,10 @@ table i:hover {
     }
     .table2 {
         display: block;
+        width: 100%;
+    }
+    .table2 tbody {
+        display: table;
         width: 100%;
     }
     .table2 tr {
